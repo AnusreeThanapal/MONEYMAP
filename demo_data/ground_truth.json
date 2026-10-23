@@ -1,0 +1,62 @@
+{
+  "accounts": {
+    "HDFC Savings (7823)": {
+      "type": "bank",
+      "balance": 358848
+    },
+    "ICICI Savings (3341)": {
+      "type": "bank",
+      "balance": 358848
+    },
+    "PhonePe UPI": {
+      "type": "wallet",
+      "balance": 0
+    },
+    "HDFC Credit Card 4821": {
+      "type": "card",
+      "balance": -28000
+    },
+    "SBI Home Loan": {
+      "type": "loan",
+      "balance": -185000
+    }
+  },
+  "net_worth_approx": 245000,
+  "three_month_salary_total": 255000,
+  "total_transactions_approx": 50,
+  "anomalies": [
+    {
+      "type": "duplicate",
+      "merchant": "Zomato",
+      "amount": 847,
+      "date": "2025-02-14",
+      "reason": "Same merchant, amount and date appearing twice in bank_statement_2.png"
+    },
+    {
+      "type": "large_transaction",
+      "merchant": "Amazon",
+      "amount": 34999,
+      "date": "2025-02-22",
+      "reason": "Amount far exceeds mean + 3 std dev for Shopping category"
+    },
+    {
+      "type": "night_transaction",
+      "merchant": "Uber (03:14 AM)",
+      "amount": 650,
+      "date": "2025-01-18",
+      "reason": "Transaction recorded at 3:14 AM \u2014 unusual hour"
+    }
+  ],
+  "spending_by_category_approx": {
+    "Salary": 255000,
+    "Rent": 66000,
+    "EMI": 55500,
+    "Food": 8000,
+    "Groceries": 18000,
+    "Shopping": 55000,
+    "Bills": 5000,
+    "Transport": 2000,
+    "Health": 2000,
+    "Entertainment": 2000
+  }
+}

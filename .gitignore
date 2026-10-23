@@ -1,8 +1,17 @@
-﻿# Python
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
 backend/.venv/
-backend/__pycache__/
-backend/*.pyc
 backend/.pytest_cache/
+.pytest_cache/
+
+# Database & Cache
+*.db
+*.sqlite
+*.sqlite3
+backend/extraction_cache/
+backend/uploads/
 
 # Node
 frontend/node_modules/
@@ -11,7 +20,11 @@ frontend/dist/
 # Env files
 .env
 *.env
+.env.*
 
-# OS
+# IDE & OS
+.vscode/
+.idea/
 .DS_Store
 Thumbs.db
+
